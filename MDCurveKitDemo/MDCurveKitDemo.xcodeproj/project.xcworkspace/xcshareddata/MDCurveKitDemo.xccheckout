@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A95DE301-7E4E-4769-A2AF-187AC13C7A01</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MDCurveKitDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>3CC3F474-9CFF-4F7E-948C-6D1682B0133D</key>
+		<string>ssh://larkin.github.com/yangchenlarkin/MDCurveKit.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MDCurveKitDemo/MDCurveKitDemo.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>3CC3F474-9CFF-4F7E-948C-6D1682B0133D</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://larkin.github.com/yangchenlarkin/MDCurveKit.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>3CC3F474-9CFF-4F7E-948C-6D1682B0133D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3CC3F474-9CFF-4F7E-948C-6D1682B0133D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MDCurveKit</string>
+		</dict>
+	</array>
+</dict>
+</plist>

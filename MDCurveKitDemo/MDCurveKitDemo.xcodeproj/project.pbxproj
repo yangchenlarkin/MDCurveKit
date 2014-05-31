@@ -1,0 +1,565 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D071099C194F291B00120B57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D071099B194F291B00120B57 /* Foundation.framework */; };
+		D071099E194F291B00120B57 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D071099D194F291B00120B57 /* CoreGraphics.framework */; };
+		D07109A0194F291B00120B57 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D071099F194F291B00120B57 /* UIKit.framework */; };
+		D07109A6194F291B00120B57 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D07109A4194F291B00120B57 /* InfoPlist.strings */; };
+		D07109A8194F291B00120B57 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D07109A7194F291B00120B57 /* main.m */; };
+		D07109AC194F291B00120B57 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D07109AB194F291B00120B57 /* AppDelegate.m */; };
+		D07109AE194F291B00120B57 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D07109AD194F291B00120B57 /* Images.xcassets */; };
+		D07109B5194F291B00120B57 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D07109B4194F291B00120B57 /* XCTest.framework */; };
+		D07109B6194F291B00120B57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D071099B194F291B00120B57 /* Foundation.framework */; };
+		D07109B7194F291B00120B57 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D071099F194F291B00120B57 /* UIKit.framework */; };
+		D07109BF194F291B00120B57 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D07109BD194F291B00120B57 /* InfoPlist.strings */; };
+		D07109C1194F291B00120B57 /* MDCurveKitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D07109C0194F291B00120B57 /* MDCurveKitDemoTests.m */; };
+		D07109CC194F294A00120B57 /* MDHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D07109CB194F294A00120B57 /* MDHomeViewController.m */; };
+		D07109D8194F2BF400120B57 /* MDCurve.m in Sources */ = {isa = PBXBuildFile; fileRef = D07109D1194F2BF400120B57 /* MDCurve.m */; };
+		D07109D9194F2BF400120B57 /* MDPointPair.m in Sources */ = {isa = PBXBuildFile; fileRef = D07109D3194F2BF400120B57 /* MDPointPair.m */; };
+		D07109DA194F2BF400120B57 /* MDCurveLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D07109D6194F2BF400120B57 /* MDCurveLabel.m */; };
+		D07109DB194F2BF400120B57 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D07109D7194F2BF400120B57 /* README.md */; };
+		D07109E7194F2C6F00120B57 /* MDBezierCurveDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D07109DF194F2C6F00120B57 /* MDBezierCurveDemoViewController.m */; };
+		D07109E8194F2C6F00120B57 /* MDCurveDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D07109E1194F2C6F00120B57 /* MDCurveDemoViewController.m */; };
+		D07109E9194F2C6F00120B57 /* MDDemoView.m in Sources */ = {isa = PBXBuildFile; fileRef = D07109E3194F2C6F00120B57 /* MDDemoView.m */; };
+		D07109EA194F2C6F00120B57 /* MDCurveDemoRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D07109E5194F2C6F00120B57 /* MDCurveDemoRootViewController.m */; };
+		D07109EF194F2E1E00120B57 /* MDGetStringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D07109EC194F2E1E00120B57 /* MDGetStringViewController.m */; };
+		D07109F0194F2E1F00120B57 /* MDCurveLabelDemoRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D07109EE194F2E1E00120B57 /* MDCurveLabelDemoRootViewController.m */; };
+		D07109F3194F2F4000120B57 /* MDCurvePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = D07109F2194F2F4000120B57 /* MDCurvePicker.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D07109B8194F291B00120B57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0710990194F291A00120B57 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0710997194F291B00120B57;
+			remoteInfo = MDCurveKitDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D0710998194F291B00120B57 /* MDCurveKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MDCurveKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D071099B194F291B00120B57 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D071099D194F291B00120B57 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D071099F194F291B00120B57 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D07109A3194F291B00120B57 /* MDCurveKitDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MDCurveKitDemo-Info.plist"; sourceTree = "<group>"; };
+		D07109A5194F291B00120B57 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D07109A7194F291B00120B57 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D07109A9194F291B00120B57 /* MDCurveKitDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MDCurveKitDemo-Prefix.pch"; sourceTree = "<group>"; };
+		D07109AA194F291B00120B57 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D07109AB194F291B00120B57 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D07109AD194F291B00120B57 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D07109B3194F291B00120B57 /* MDCurveKitDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MDCurveKitDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D07109B4194F291B00120B57 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D07109BC194F291B00120B57 /* MDCurveKitDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MDCurveKitDemoTests-Info.plist"; sourceTree = "<group>"; };
+		D07109BE194F291B00120B57 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D07109C0194F291B00120B57 /* MDCurveKitDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDCurveKitDemoTests.m; sourceTree = "<group>"; };
+		D07109CA194F294A00120B57 /* MDHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDHomeViewController.h; sourceTree = "<group>"; };
+		D07109CB194F294A00120B57 /* MDHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDHomeViewController.m; sourceTree = "<group>"; };
+		D07109D0194F2BF400120B57 /* MDCurve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDCurve.h; sourceTree = "<group>"; };
+		D07109D1194F2BF400120B57 /* MDCurve.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDCurve.m; sourceTree = "<group>"; };
+		D07109D2194F2BF400120B57 /* MDPointPair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDPointPair.h; sourceTree = "<group>"; };
+		D07109D3194F2BF400120B57 /* MDPointPair.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDPointPair.m; sourceTree = "<group>"; };
+		D07109D5194F2BF400120B57 /* MDCurveLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDCurveLabel.h; sourceTree = "<group>"; };
+		D07109D6194F2BF400120B57 /* MDCurveLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDCurveLabel.m; sourceTree = "<group>"; };
+		D07109D7194F2BF400120B57 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		D07109DE194F2C6F00120B57 /* MDBezierCurveDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDBezierCurveDemoViewController.h; sourceTree = "<group>"; };
+		D07109DF194F2C6F00120B57 /* MDBezierCurveDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDBezierCurveDemoViewController.m; sourceTree = "<group>"; };
+		D07109E0194F2C6F00120B57 /* MDCurveDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDCurveDemoViewController.h; sourceTree = "<group>"; };
+		D07109E1194F2C6F00120B57 /* MDCurveDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDCurveDemoViewController.m; sourceTree = "<group>"; };
+		D07109E2194F2C6F00120B57 /* MDDemoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDDemoView.h; sourceTree = "<group>"; };
+		D07109E3194F2C6F00120B57 /* MDDemoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDDemoView.m; sourceTree = "<group>"; };
+		D07109E4194F2C6F00120B57 /* MDCurveDemoRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDCurveDemoRootViewController.h; sourceTree = "<group>"; };
+		D07109E5194F2C6F00120B57 /* MDCurveDemoRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDCurveDemoRootViewController.m; sourceTree = "<group>"; };
+		D07109EB194F2E1E00120B57 /* MDGetStringViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDGetStringViewController.h; sourceTree = "<group>"; };
+		D07109EC194F2E1E00120B57 /* MDGetStringViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDGetStringViewController.m; sourceTree = "<group>"; };
+		D07109ED194F2E1E00120B57 /* MDCurveLabelDemoRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDCurveLabelDemoRootViewController.h; sourceTree = "<group>"; };
+		D07109EE194F2E1E00120B57 /* MDCurveLabelDemoRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDCurveLabelDemoRootViewController.m; sourceTree = "<group>"; };
+		D07109F1194F2F4000120B57 /* MDCurvePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDCurvePicker.h; sourceTree = "<group>"; };
+		D07109F2194F2F4000120B57 /* MDCurvePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDCurvePicker.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D0710995194F291B00120B57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D071099E194F291B00120B57 /* CoreGraphics.framework in Frameworks */,
+				D07109A0194F291B00120B57 /* UIKit.framework in Frameworks */,
+				D071099C194F291B00120B57 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D07109B0194F291B00120B57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D07109B5194F291B00120B57 /* XCTest.framework in Frameworks */,
+				D07109B7194F291B00120B57 /* UIKit.framework in Frameworks */,
+				D07109B6194F291B00120B57 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D071098F194F291A00120B57 = {
+			isa = PBXGroup;
+			children = (
+				D07109CE194F2BF400120B57 /* MDCurveKit */,
+				D07109A1194F291B00120B57 /* MDCurveKitDemo */,
+				D07109BA194F291B00120B57 /* MDCurveKitDemoTests */,
+				D071099A194F291B00120B57 /* Frameworks */,
+				D0710999194F291B00120B57 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D0710999194F291B00120B57 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0710998194F291B00120B57 /* MDCurveKitDemo.app */,
+				D07109B3194F291B00120B57 /* MDCurveKitDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D071099A194F291B00120B57 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D071099B194F291B00120B57 /* Foundation.framework */,
+				D071099D194F291B00120B57 /* CoreGraphics.framework */,
+				D071099F194F291B00120B57 /* UIKit.framework */,
+				D07109B4194F291B00120B57 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D07109A1194F291B00120B57 /* MDCurveKitDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D07109DD194F2C6F00120B57 /* MDCurve */,
+				D07109E6194F2C6F00120B57 /* MDCurveLabel */,
+				D07109AA194F291B00120B57 /* AppDelegate.h */,
+				D07109AB194F291B00120B57 /* AppDelegate.m */,
+				D07109AD194F291B00120B57 /* Images.xcassets */,
+				D07109A2194F291B00120B57 /* Supporting Files */,
+				D07109CA194F294A00120B57 /* MDHomeViewController.h */,
+				D07109CB194F294A00120B57 /* MDHomeViewController.m */,
+				D07109F1194F2F4000120B57 /* MDCurvePicker.h */,
+				D07109F2194F2F4000120B57 /* MDCurvePicker.m */,
+			);
+			path = MDCurveKitDemo;
+			sourceTree = "<group>";
+		};
+		D07109A2194F291B00120B57 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D07109A3194F291B00120B57 /* MDCurveKitDemo-Info.plist */,
+				D07109A4194F291B00120B57 /* InfoPlist.strings */,
+				D07109A7194F291B00120B57 /* main.m */,
+				D07109A9194F291B00120B57 /* MDCurveKitDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D07109BA194F291B00120B57 /* MDCurveKitDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				D07109C0194F291B00120B57 /* MDCurveKitDemoTests.m */,
+				D07109BB194F291B00120B57 /* Supporting Files */,
+			);
+			path = MDCurveKitDemoTests;
+			sourceTree = "<group>";
+		};
+		D07109BB194F291B00120B57 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D07109BC194F291B00120B57 /* MDCurveKitDemoTests-Info.plist */,
+				D07109BD194F291B00120B57 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D07109CE194F2BF400120B57 /* MDCurveKit */ = {
+			isa = PBXGroup;
+			children = (
+				D07109CF194F2BF400120B57 /* MDCurve */,
+				D07109D4194F2BF400120B57 /* MDCurveLabel */,
+				D07109D7194F2BF400120B57 /* README.md */,
+			);
+			name = MDCurveKit;
+			path = ../MDCurveKit;
+			sourceTree = "<group>";
+		};
+		D07109CF194F2BF400120B57 /* MDCurve */ = {
+			isa = PBXGroup;
+			children = (
+				D07109D0194F2BF400120B57 /* MDCurve.h */,
+				D07109D1194F2BF400120B57 /* MDCurve.m */,
+				D07109D2194F2BF400120B57 /* MDPointPair.h */,
+				D07109D3194F2BF400120B57 /* MDPointPair.m */,
+			);
+			path = MDCurve;
+			sourceTree = "<group>";
+		};
+		D07109D4194F2BF400120B57 /* MDCurveLabel */ = {
+			isa = PBXGroup;
+			children = (
+				D07109D5194F2BF400120B57 /* MDCurveLabel.h */,
+				D07109D6194F2BF400120B57 /* MDCurveLabel.m */,
+			);
+			path = MDCurveLabel;
+			sourceTree = "<group>";
+		};
+		D07109DD194F2C6F00120B57 /* MDCurve */ = {
+			isa = PBXGroup;
+			children = (
+				D07109DE194F2C6F00120B57 /* MDBezierCurveDemoViewController.h */,
+				D07109DF194F2C6F00120B57 /* MDBezierCurveDemoViewController.m */,
+				D07109E0194F2C6F00120B57 /* MDCurveDemoViewController.h */,
+				D07109E1194F2C6F00120B57 /* MDCurveDemoViewController.m */,
+				D07109E2194F2C6F00120B57 /* MDDemoView.h */,
+				D07109E3194F2C6F00120B57 /* MDDemoView.m */,
+				D07109E4194F2C6F00120B57 /* MDCurveDemoRootViewController.h */,
+				D07109E5194F2C6F00120B57 /* MDCurveDemoRootViewController.m */,
+			);
+			path = MDCurve;
+			sourceTree = "<group>";
+		};
+		D07109E6194F2C6F00120B57 /* MDCurveLabel */ = {
+			isa = PBXGroup;
+			children = (
+				D07109EB194F2E1E00120B57 /* MDGetStringViewController.h */,
+				D07109EC194F2E1E00120B57 /* MDGetStringViewController.m */,
+				D07109ED194F2E1E00120B57 /* MDCurveLabelDemoRootViewController.h */,
+				D07109EE194F2E1E00120B57 /* MDCurveLabelDemoRootViewController.m */,
+			);
+			path = MDCurveLabel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D0710997194F291B00120B57 /* MDCurveKitDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D07109C4194F291B00120B57 /* Build configuration list for PBXNativeTarget "MDCurveKitDemo" */;
+			buildPhases = (
+				D0710994194F291B00120B57 /* Sources */,
+				D0710995194F291B00120B57 /* Frameworks */,
+				D0710996194F291B00120B57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MDCurveKitDemo;
+			productName = MDCurveKitDemo;
+			productReference = D0710998194F291B00120B57 /* MDCurveKitDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D07109B2194F291B00120B57 /* MDCurveKitDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D07109C7194F291B00120B57 /* Build configuration list for PBXNativeTarget "MDCurveKitDemoTests" */;
+			buildPhases = (
+				D07109AF194F291B00120B57 /* Sources */,
+				D07109B0194F291B00120B57 /* Frameworks */,
+				D07109B1194F291B00120B57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D07109B9194F291B00120B57 /* PBXTargetDependency */,
+			);
+			name = MDCurveKitDemoTests;
+			productName = MDCurveKitDemoTests;
+			productReference = D07109B3194F291B00120B57 /* MDCurveKitDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0710990194F291A00120B57 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "剑川道长";
+				TargetAttributes = {
+					D07109B2194F291B00120B57 = {
+						TestTargetID = D0710997194F291B00120B57;
+					};
+				};
+			};
+			buildConfigurationList = D0710993194F291A00120B57 /* Build configuration list for PBXProject "MDCurveKitDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D071098F194F291A00120B57;
+			productRefGroup = D0710999194F291B00120B57 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0710997194F291B00120B57 /* MDCurveKitDemo */,
+				D07109B2194F291B00120B57 /* MDCurveKitDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D0710996194F291B00120B57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D07109DB194F2BF400120B57 /* README.md in Resources */,
+				D07109A6194F291B00120B57 /* InfoPlist.strings in Resources */,
+				D07109AE194F291B00120B57 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D07109B1194F291B00120B57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D07109BF194F291B00120B57 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D0710994194F291B00120B57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D07109E8194F2C6F00120B57 /* MDCurveDemoViewController.m in Sources */,
+				D07109E9194F2C6F00120B57 /* MDDemoView.m in Sources */,
+				D07109CC194F294A00120B57 /* MDHomeViewController.m in Sources */,
+				D07109F3194F2F4000120B57 /* MDCurvePicker.m in Sources */,
+				D07109DA194F2BF400120B57 /* MDCurveLabel.m in Sources */,
+				D07109AC194F291B00120B57 /* AppDelegate.m in Sources */,
+				D07109EF194F2E1E00120B57 /* MDGetStringViewController.m in Sources */,
+				D07109F0194F2E1F00120B57 /* MDCurveLabelDemoRootViewController.m in Sources */,
+				D07109D8194F2BF400120B57 /* MDCurve.m in Sources */,
+				D07109D9194F2BF400120B57 /* MDPointPair.m in Sources */,
+				D07109E7194F2C6F00120B57 /* MDBezierCurveDemoViewController.m in Sources */,
+				D07109EA194F2C6F00120B57 /* MDCurveDemoRootViewController.m in Sources */,
+				D07109A8194F291B00120B57 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D07109AF194F291B00120B57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D07109C1194F291B00120B57 /* MDCurveKitDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D07109B9194F291B00120B57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0710997194F291B00120B57 /* MDCurveKitDemo */;
+			targetProxy = D07109B8194F291B00120B57 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D07109A4194F291B00120B57 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D07109A5194F291B00120B57 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D07109BD194F291B00120B57 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D07109BE194F291B00120B57 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D07109C2194F291B00120B57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D07109C3194F291B00120B57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D07109C5194F291B00120B57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MDCurveKitDemo/MDCurveKitDemo-Prefix.pch";
+				INFOPLIST_FILE = "MDCurveKitDemo/MDCurveKitDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D07109C6194F291B00120B57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MDCurveKitDemo/MDCurveKitDemo-Prefix.pch";
+				INFOPLIST_FILE = "MDCurveKitDemo/MDCurveKitDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D07109C8194F291B00120B57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MDCurveKitDemo.app/MDCurveKitDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MDCurveKitDemo/MDCurveKitDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MDCurveKitDemoTests/MDCurveKitDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D07109C9194F291B00120B57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MDCurveKitDemo.app/MDCurveKitDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MDCurveKitDemo/MDCurveKitDemo-Prefix.pch";
+				INFOPLIST_FILE = "MDCurveKitDemoTests/MDCurveKitDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D0710993194F291A00120B57 /* Build configuration list for PBXProject "MDCurveKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D07109C2194F291B00120B57 /* Debug */,
+				D07109C3194F291B00120B57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D07109C4194F291B00120B57 /* Build configuration list for PBXNativeTarget "MDCurveKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D07109C5194F291B00120B57 /* Debug */,
+				D07109C6194F291B00120B57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D07109C7194F291B00120B57 /* Build configuration list for PBXNativeTarget "MDCurveKitDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D07109C8194F291B00120B57 /* Debug */,
+				D07109C9194F291B00120B57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D0710990194F291A00120B57 /* Project object */;
+}
