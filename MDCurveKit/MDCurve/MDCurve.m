@@ -50,8 +50,8 @@
 
 #pragma mark - setter
 
-- (void)setCurveFuction:(MDCurvePointFuction)curveFuction {
-  _curveFuction = [curveFuction copy];
+- (void)setCurveFunction:(MDCurvePointFunction)curveFunction {
+  _curveFunction = [curveFunction copy];
   [self generateLengthCache];
 }
 
@@ -72,15 +72,15 @@
 }
 
 - (double)x:(double)t {
-  if (self.curveFuction) {
-    return self.curveFuction(t).x;
+  if (self.curveFunction) {
+    return self.curveFunction(t).x;
   }
   return 0;
 }
 
 - (double)y:(double)t {
-  if (self.curveFuction) {
-    return self.curveFuction(t).y;
+  if (self.curveFunction) {
+    return self.curveFunction(t).y;
   }
   return 0;
 }
@@ -147,7 +147,7 @@
 }
 
 - (double)t_v:(double)v {
-  if (!self.curveFuction) {
+  if (!self.curveFunction) {
     return 0;
   }
   if (v <= 0) {
@@ -188,7 +188,7 @@
 
 #pragma mark - method forbidden
 
-- (void)setCurveFuction:(MDCurvePointFuction)curveFuction {
+- (void)setCurveFunction:(MDCurvePointFunction)curveFunction {
   NSLog(@"method %s is forbidden in MDBezierCurve", __FUNCTION__);
   assert(NO);
 }
@@ -228,7 +228,7 @@
     return;
   }
   __weak MDBezierCurve *self_weak_ = self;
-  super.curveFuction = ^(double t) {
+  super.curveFunction = ^(double t) {
     NSUInteger number = self_weak_.pointPairs.count - 1;//曲线段数
     if (t >= 1) {
       return [self_weak_ pointWithT:1. inIndex:number - 1];

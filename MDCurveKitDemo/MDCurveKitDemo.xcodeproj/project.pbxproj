@@ -24,13 +24,13 @@
 		D07109D9194F2BF400120B57 /* MDPointPair.m in Sources */ = {isa = PBXBuildFile; fileRef = D07109D3194F2BF400120B57 /* MDPointPair.m */; };
 		D07109DA194F2BF400120B57 /* MDCurveLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D07109D6194F2BF400120B57 /* MDCurveLabel.m */; };
 		D07109DB194F2BF400120B57 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D07109D7194F2BF400120B57 /* README.md */; };
-		D07109E7194F2C6F00120B57 /* MDBezierCurveDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D07109DF194F2C6F00120B57 /* MDBezierCurveDemoViewController.m */; };
 		D07109E8194F2C6F00120B57 /* MDCurveDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D07109E1194F2C6F00120B57 /* MDCurveDemoViewController.m */; };
-		D07109E9194F2C6F00120B57 /* MDDemoView.m in Sources */ = {isa = PBXBuildFile; fileRef = D07109E3194F2C6F00120B57 /* MDDemoView.m */; };
-		D07109EA194F2C6F00120B57 /* MDCurveDemoRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D07109E5194F2C6F00120B57 /* MDCurveDemoRootViewController.m */; };
+		D07109E9194F2C6F00120B57 /* MDCurveDemoView.m in Sources */ = {isa = PBXBuildFile; fileRef = D07109E3194F2C6F00120B57 /* MDCurveDemoView.m */; };
 		D07109EF194F2E1E00120B57 /* MDGetStringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D07109EC194F2E1E00120B57 /* MDGetStringViewController.m */; };
-		D07109F0194F2E1F00120B57 /* MDCurveLabelDemoRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D07109EE194F2E1E00120B57 /* MDCurveLabelDemoRootViewController.m */; };
+		D07109F0194F2E1F00120B57 /* MDCurveLabelDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D07109EE194F2E1E00120B57 /* MDCurveLabelDemoViewController.m */; };
 		D07109F3194F2F4000120B57 /* MDCurvePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = D07109F2194F2F4000120B57 /* MDCurvePicker.m */; };
+		D07109F6194F40C300120B57 /* MDViewControllerWithPickerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D07109F5194F40C300120B57 /* MDViewControllerWithPickerButton.m */; };
+		D07109FC194F498E00120B57 /* MDCurveDemoLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D07109FB194F498E00120B57 /* MDCurveDemoLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,20 +69,20 @@
 		D07109D5194F2BF400120B57 /* MDCurveLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDCurveLabel.h; sourceTree = "<group>"; };
 		D07109D6194F2BF400120B57 /* MDCurveLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDCurveLabel.m; sourceTree = "<group>"; };
 		D07109D7194F2BF400120B57 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		D07109DE194F2C6F00120B57 /* MDBezierCurveDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDBezierCurveDemoViewController.h; sourceTree = "<group>"; };
-		D07109DF194F2C6F00120B57 /* MDBezierCurveDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDBezierCurveDemoViewController.m; sourceTree = "<group>"; };
 		D07109E0194F2C6F00120B57 /* MDCurveDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDCurveDemoViewController.h; sourceTree = "<group>"; };
 		D07109E1194F2C6F00120B57 /* MDCurveDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDCurveDemoViewController.m; sourceTree = "<group>"; };
-		D07109E2194F2C6F00120B57 /* MDDemoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDDemoView.h; sourceTree = "<group>"; };
-		D07109E3194F2C6F00120B57 /* MDDemoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDDemoView.m; sourceTree = "<group>"; };
-		D07109E4194F2C6F00120B57 /* MDCurveDemoRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDCurveDemoRootViewController.h; sourceTree = "<group>"; };
-		D07109E5194F2C6F00120B57 /* MDCurveDemoRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDCurveDemoRootViewController.m; sourceTree = "<group>"; };
+		D07109E2194F2C6F00120B57 /* MDCurveDemoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDCurveDemoView.h; sourceTree = "<group>"; };
+		D07109E3194F2C6F00120B57 /* MDCurveDemoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDCurveDemoView.m; sourceTree = "<group>"; };
 		D07109EB194F2E1E00120B57 /* MDGetStringViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDGetStringViewController.h; sourceTree = "<group>"; };
 		D07109EC194F2E1E00120B57 /* MDGetStringViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDGetStringViewController.m; sourceTree = "<group>"; };
-		D07109ED194F2E1E00120B57 /* MDCurveLabelDemoRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDCurveLabelDemoRootViewController.h; sourceTree = "<group>"; };
-		D07109EE194F2E1E00120B57 /* MDCurveLabelDemoRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDCurveLabelDemoRootViewController.m; sourceTree = "<group>"; };
+		D07109ED194F2E1E00120B57 /* MDCurveLabelDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDCurveLabelDemoViewController.h; sourceTree = "<group>"; };
+		D07109EE194F2E1E00120B57 /* MDCurveLabelDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDCurveLabelDemoViewController.m; sourceTree = "<group>"; };
 		D07109F1194F2F4000120B57 /* MDCurvePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDCurvePicker.h; sourceTree = "<group>"; };
 		D07109F2194F2F4000120B57 /* MDCurvePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDCurvePicker.m; sourceTree = "<group>"; };
+		D07109F4194F40C300120B57 /* MDViewControllerWithPickerButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDViewControllerWithPickerButton.h; sourceTree = "<group>"; };
+		D07109F5194F40C300120B57 /* MDViewControllerWithPickerButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDViewControllerWithPickerButton.m; sourceTree = "<group>"; };
+		D07109FA194F498E00120B57 /* MDCurveDemoLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDCurveDemoLabel.h; sourceTree = "<group>"; };
+		D07109FB194F498E00120B57 /* MDCurveDemoLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDCurveDemoLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +153,8 @@
 				D07109CB194F294A00120B57 /* MDHomeViewController.m */,
 				D07109F1194F2F4000120B57 /* MDCurvePicker.h */,
 				D07109F2194F2F4000120B57 /* MDCurvePicker.m */,
+				D07109F4194F40C300120B57 /* MDViewControllerWithPickerButton.h */,
+				D07109F5194F40C300120B57 /* MDViewControllerWithPickerButton.m */,
 			);
 			path = MDCurveKitDemo;
 			sourceTree = "<group>";
@@ -220,14 +222,10 @@
 		D07109DD194F2C6F00120B57 /* MDCurve */ = {
 			isa = PBXGroup;
 			children = (
-				D07109DE194F2C6F00120B57 /* MDBezierCurveDemoViewController.h */,
-				D07109DF194F2C6F00120B57 /* MDBezierCurveDemoViewController.m */,
 				D07109E0194F2C6F00120B57 /* MDCurveDemoViewController.h */,
 				D07109E1194F2C6F00120B57 /* MDCurveDemoViewController.m */,
-				D07109E2194F2C6F00120B57 /* MDDemoView.h */,
-				D07109E3194F2C6F00120B57 /* MDDemoView.m */,
-				D07109E4194F2C6F00120B57 /* MDCurveDemoRootViewController.h */,
-				D07109E5194F2C6F00120B57 /* MDCurveDemoRootViewController.m */,
+				D07109E2194F2C6F00120B57 /* MDCurveDemoView.h */,
+				D07109E3194F2C6F00120B57 /* MDCurveDemoView.m */,
 			);
 			path = MDCurve;
 			sourceTree = "<group>";
@@ -235,10 +233,12 @@
 		D07109E6194F2C6F00120B57 /* MDCurveLabel */ = {
 			isa = PBXGroup;
 			children = (
+				D07109ED194F2E1E00120B57 /* MDCurveLabelDemoViewController.h */,
+				D07109EE194F2E1E00120B57 /* MDCurveLabelDemoViewController.m */,
 				D07109EB194F2E1E00120B57 /* MDGetStringViewController.h */,
 				D07109EC194F2E1E00120B57 /* MDGetStringViewController.m */,
-				D07109ED194F2E1E00120B57 /* MDCurveLabelDemoRootViewController.h */,
-				D07109EE194F2E1E00120B57 /* MDCurveLabelDemoRootViewController.m */,
+				D07109FA194F498E00120B57 /* MDCurveDemoLabel.h */,
+				D07109FB194F498E00120B57 /* MDCurveDemoLabel.m */,
 			);
 			path = MDCurveLabel;
 			sourceTree = "<group>";
@@ -340,17 +340,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				D07109E8194F2C6F00120B57 /* MDCurveDemoViewController.m in Sources */,
-				D07109E9194F2C6F00120B57 /* MDDemoView.m in Sources */,
+				D07109E9194F2C6F00120B57 /* MDCurveDemoView.m in Sources */,
 				D07109CC194F294A00120B57 /* MDHomeViewController.m in Sources */,
 				D07109F3194F2F4000120B57 /* MDCurvePicker.m in Sources */,
 				D07109DA194F2BF400120B57 /* MDCurveLabel.m in Sources */,
 				D07109AC194F291B00120B57 /* AppDelegate.m in Sources */,
 				D07109EF194F2E1E00120B57 /* MDGetStringViewController.m in Sources */,
-				D07109F0194F2E1F00120B57 /* MDCurveLabelDemoRootViewController.m in Sources */,
+				D07109F6194F40C300120B57 /* MDViewControllerWithPickerButton.m in Sources */,
+				D07109F0194F2E1F00120B57 /* MDCurveLabelDemoViewController.m in Sources */,
 				D07109D8194F2BF400120B57 /* MDCurve.m in Sources */,
 				D07109D9194F2BF400120B57 /* MDPointPair.m in Sources */,
-				D07109E7194F2C6F00120B57 /* MDBezierCurveDemoViewController.m in Sources */,
-				D07109EA194F2C6F00120B57 /* MDCurveDemoRootViewController.m in Sources */,
+				D07109FC194F498E00120B57 /* MDCurveDemoLabel.m in Sources */,
 				D07109A8194F291B00120B57 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

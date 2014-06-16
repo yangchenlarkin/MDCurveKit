@@ -40,7 +40,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
   [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
-  Class theClass = NSClassFromString([_dataSource[indexPath.row] stringByAppendingString:@"RootViewController"]);
+  Class theClass = NSClassFromString([_dataSource[indexPath.row] stringByAppendingString:@"ViewController"]);
   UIViewController *viewController = [[theClass alloc] init];
   [self.navigationController pushViewController:viewController animated:YES];
 }

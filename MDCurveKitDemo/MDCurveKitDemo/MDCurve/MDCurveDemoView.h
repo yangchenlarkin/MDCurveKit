@@ -1,5 +1,5 @@
 //
-//  MDDemoView.h
+//  MDCurveDemoView.h
 //  MDCurveDemo
 //
 //  Created by 杨晨 on 12/27/13.
@@ -9,10 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "MDCurve.h"
 
-@interface MDDemoView : UIView
+@interface MDCurveDemoView : UIView
 
 @property (nonatomic, strong) MDCurve *curve;
 
-- (void)setCurveFunction:(MDCurvePointFuction)function;
+- (void)setCurveFunction:(MDCurvePointFunction)function;
 
 @end

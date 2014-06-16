@@ -10,13 +10,14 @@
 
 @class MDCurve;
 
-typedef void (^MDCurvePickerBlock)(MDCurve *curve, NSString *name);
+typedef void (^MDCurvePickerBlock)(MDCurve *curve);
 
 @interface MDCurvePicker : NSObject
 
-- (id)initWithBlock:(MDCurvePickerBlock)block
-     viewController:(UIViewController *)viewController;
+- (id)initWithBlock:(MDCurvePickerBlock)block;
 
-- (void)pick;
+- (void)pickInViewController:(UIViewController *)viewController;
+
++ (NSArray *)curves;
 
 @end

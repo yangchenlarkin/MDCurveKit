@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MDViewControllerWithPickerButton.h"
 
-@interface MDCurveDemoViewController : UIViewController
+@interface MDCurveDemoViewController : MDViewControllerWithPickerButton
 
 @end

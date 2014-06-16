@@ -1,18 +1,18 @@
 //
-//  MDDemoView.m
+//  MDCurveDemoView.m
 //  MDCurveDemo
 //
 //  Created by 杨晨 on 12/27/13.
 //  Copyright (c) 2013 杨晨. All rights reserved.
 //
 
-#import "MDDemoView.h"
+#import "MDCurveDemoView.h"
 #import "MDCurve.h"
 #import "mach/mach_time.h"
 
 #define pointCount 200
 
-@implementation MDDemoView
+@implementation MDCurveDemoView
 
 @synthesize curve = _curve;
 
@@ -33,8 +33,8 @@
   return self;
 }
 
-- (void)setCurveFunction:(MDCurvePointFuction)function {
-  self.curve.curveFuction = function;
+- (void)setCurveFunction:(MDCurvePointFunction)function {
+  self.curve.curveFunction = function;
   [self setNeedsDisplay];
 }
 

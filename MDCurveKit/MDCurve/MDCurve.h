@@ -9,15 +9,15 @@
 #import <Foundation/Foundation.h>
 #import "MDPointPair.h"
 
-typedef CGPoint(^MDCurvePointFuction)(double v);
-typedef double(^MDCurveFuction)(double x);
+typedef CGPoint(^MDCurvePointFunction)(double v);
+typedef double(^MDcurveFunction)(double x);
 
 @interface MDCurve : NSObject
 
 /**
  *  给出线长函数反函数的时候，性能最高，其次是给线长函数，如果只给曲线函数，性能比较低。
  */
-@property (nonatomic, copy) MDCurvePointFuction curveFuction;
+@property (nonatomic, copy) MDCurvePointFunction curveFunction;
 @property (nonatomic, readonly) BOOL isBezierCurve;
 
 - (double)length;

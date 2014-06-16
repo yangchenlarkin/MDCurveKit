@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@class MDCurve;
-
-typedef void(^MDDidGetInfo)(BOOL useAttribute, MDCurve *curve, CGFloat startOffset);
+typedef void(^MDDidGetInfo)();
 
 @interface MDGetStringViewController : UITableViewController
 
 @property (nonatomic, copy) MDDidGetInfo didGetInfo;
+@property (nonatomic, readonly) CGFloat startOffset;
+@property (nonatomic, readonly) BOOL useAttribute;
 
 @end
