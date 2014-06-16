@@ -13,9 +13,9 @@
 
 @property (nonatomic, strong) MDCurve *curve;
 
-@property(nonatomic,copy) NSString *text;
-@property(nonatomic,retain) UIFont *font;
-@property(nonatomic,retain) UIColor *textColor;
+@property (nonatomic, copy) NSString *text;
+@property (nonatomic, strong) UIFont *font;
+@property (nonatomic, strong) UIColor *textColor;
 
 @property (nonatomic, copy) NSAttributedString *attributedString;
 

@@ -111,41 +111,23 @@
 
 - (CTFontRef)prepareContext:(CGContextRef)context forRun:(CTRunRef)run {
   CFDictionaryRef attributes = CTRunGetAttributes(run);
-  id font = CFDictionaryGetValue(attributes, kCTFontAttributeName);
-  CTFontRef runFont = CFDictionaryGetValue(attributes, kCTFontAttributeName);
-  if ([font isKindOfClass:[UIFont class]]) {
-    runFont = CTFontCreateWithName((CFStringRef)((UIFont *)font).fontName, 14, NULL);
+  CTFontRef runFont;
+  //manage the font
+  UIFont *font = CFDictionaryGetValue(attributes, kCTFontAttributeName);
+  runFont = CTFontCreateWithName((CFStringRef)font.fontName, font.pointSize, NULL);
+  CGFontRef cgFont = CTFontCopyGraphicsFont(runFont, NULL);
+  CGContextSetFont(context, cgFont);
+  CGContextSetFontSize(context, CTFontGetSize(runFont));
+  CFRelease(cgFont);
+  
+  //manager the color
+  UIColor *color = CFDictionaryGetValue(attributes, kCTForegroundColorAttributeName);
+  if (color) {
+    CGContextSetFillColorWithColor(context, color.CGColor);
+  } else {
+    CGContextSetFillColorWithColor(context, [UIColor blackColor].CGColor);
   }
   
-  size_t size = CFDictionaryGetCount(attributes);
-  CFTypeRef *keysTypeRef = (CFTypeRef *) malloc( size * sizeof(CFTypeRef) );
-  CFDictionaryGetKeysAndValues(attributes, (const void **) keysTypeRef, NULL);
-  const void **keys = (const void **) keysTypeRef;
-  for (CFIndex index = 0; index < size; ++index) {
-    NSString *string = (__bridge NSString *)keys[index];
-    NSString *fontString = (__bridge NSString *)kCTFontAttributeName;
-    NSString *colorString = (__bridge NSString *)kCTForegroundColorAttributeName;
-    if ([string isEqualToString:fontString]) {
-      
-      CGFontRef cgFont = CTFontCopyGraphicsFont(runFont, NULL);
-      CGContextSetFont(context, cgFont);
-      CGContextSetFontSize(context, CTFontGetSize(runFont));
-      CFRelease(cgFont);
-    }
-    
-    if ([string isEqualToString:colorString]) {
-      id color = CFDictionaryGetValue(attributes, kCTForegroundColorAttributeName);
-      CGColorRef colorRef;
-      if ([color isKindOfClass:[UIColor class]]) {
-        colorRef = [color CGColor];
-      } else {
-        colorRef = (CGColorRef)CFDictionaryGetValue(attributes, kCTForegroundColorAttributeName);
-      }
-      CGContextSetFillColorWithColor(context, colorRef);
-    } else {
-      CGContextSetFillColorWithColor(context, [UIColor blackColor].CGColor);
-    }
-  }
   return runFont;
 }
 
