@@ -1,9 +1,3 @@
-# Demo介绍
-MDCurveDemo是针对[MDCurveKit](https://github.com/yangchenlarkin/MDCurveKit/tree/master)里的MDCurve模块写的一个demo，把本repo clone下来之后，需要在其工程目录下装载submodule,先后执行：
-
-- git submodule init
-- git submodule update
-
 
 # MDCurve
 
@@ -18,26 +12,29 @@ MDCurve 用于解决曲线运算，并提供按线长比例定位的方法。
       x = x(t);
       y = y(t);
 
-## 2.MDCurve提供四个方法：
+## 2.MDCurve提供五个方法：
+
+###-(double)length;
 
 length 方法获取曲线总长度：
 
-- -(double)length;
+###-(CGPoint)pointWithUniformParameter:(double)v;
 
+pointWithUniformParameter 方法是MDCurve的核心方法，作用是获取曲线上某点，该点到曲线起点的曲线上距离为v乘以曲线长度，也就是说v控制了该点在曲线上的位置，并且是等比控制：
 
-pointWithUniformT 方法是MDCurve的核心方法，作用是获取曲线上某点，该点到曲线起点的曲线上距离为v乘以曲线长度，也就是说v控制了该点在曲线上的位置，并且是等比控制：
+###-(CGPoint)primePointWithUniformParameter:(double)v;
 
-- -(CGPoint)pointWithUniformT:(double)v;
+primePointWithUniformParameter 在v位置处求得(x, y)对t的导数 (dx/dt, dy/dt)
+
+###-(void)drawInContext:(CGContextRef)context step:(int)step;
 
 
 在上下文context中绘制曲线:
 
-- -(void)drawInContext:(CGContextRef)context step:(int)step;
+###-(void)drawInCurrentContextWithStep:(int)step;
 
 
 在当前上下文中绘制曲线:
-
-- -(void)drawInCurrentContextWithStep:(int)step;
 
 ## 3.只读属性isBezierCurve：
 

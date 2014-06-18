@@ -40,5 +40,11 @@ attributedString的值目前只支持使用UIKit传入，即使用UIFont,UIColor
 https://github.com/yangchenlarkin/MDCurve
 
 # 效果图
-
-##
+##使用NSAttributedString
+![](http://imageforgithub.qiniudn.com/IMG_1321.PNG)
+![](http://imageforgithub.qiniudn.com/IMG_1318.PNG)
+![](http://imageforgithub.qiniudn.com/IMG_1315.PNG)
+##不使用NSAttributedString
+![](http://imageforgithub.qiniudn.com/IMG_1320.PNG)
+![](http://imageforgithub.qiniudn.com/IMG_1319.PNG)
+![](http://imageforgithub.qiniudn.com/IMG_1317.PNG)
