@@ -1,9 +1,3 @@
-# Demo介绍
-MDCurveLabelDemo是针对[MDCurveKit](https://github.com/yangchenlarkin/MDCurveKit/tree/master)里的MDCurveLabel模块写的一个demo，把本repo clone下来之后，需要在其工程目录下装载submodule,先后执行：
-
-- git submodule init
-- git submodule update
-
 # MDCurveLabel
 
 MDCurveLabel 基于MDCurve实现按曲线排版文字,有两种赋值方式
