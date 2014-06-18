@@ -21,8 +21,8 @@ typedef double(^MDcurveFunction)(double x);
 @property (nonatomic, readonly) BOOL isBezierCurve;
 
 - (double)length;
-- (CGPoint)pointWithUniformT:(double)v;
-- (CGPoint)primePointWithUniformT:(double)v;
+- (CGPoint)pointWithUniformT:(double)uniformT;
+- (CGPoint)primePointWithUniformT:(double)uniformT;
 - (void)drawInContext:(CGContextRef)context step:(int)step;
 - (void)drawInCurrentContextWithStep:(int)step;
 

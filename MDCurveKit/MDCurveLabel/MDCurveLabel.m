@@ -61,6 +61,10 @@
     
     offset += [word sizeWithFont:self.font].width / self.curve.length;
     CGContextRestoreGState(context);
+    
+    if (offset > 1) {
+      break;
+    }
   }
 }
 

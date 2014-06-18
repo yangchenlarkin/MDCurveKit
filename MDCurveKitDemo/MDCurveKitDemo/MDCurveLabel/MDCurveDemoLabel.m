@@ -11,9 +11,6 @@
 @implementation MDCurveDemoLabel
 
 - (void)drawRect:(CGRect)rect {
-  CGContextSetFillColorWithColor(UIGraphicsGetCurrentContext(), [UIColor redColor].CGColor);
-  [self drawPointAtPoint:self.curve.curveFunction(0)];
-  [self drawPointAtPoint:self.curve.curveFunction(1)];
   [self.curve drawInCurrentContextWithStep:100];
   [super drawRect:rect];
 }

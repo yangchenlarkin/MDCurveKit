@@ -10,51 +10,50 @@
 #import "MDCurveDemoLabel.h"
 #import <CoreText/CoreText.h>
 #import "MDCurvePicker.h"
-#import "MDGetStringViewController.h"
 
 @interface MDCurveLabelDemoViewController ()
 
 @property (nonatomic, strong) MDCurveDemoLabel *label;
-@property (nonatomic, strong) MDGetStringViewController *getStringViewController;
 
 @end
 
 @implementation MDCurveLabelDemoViewController
 
-- (MDGetStringViewController *)getStringViewController {
-  if (!_getStringViewController) {
-    _getStringViewController = [[MDGetStringViewController alloc] init];
-    __weak MDCurveLabelDemoViewController *weakSelf = self;
-    _getStringViewController.didGetInfo = ^() {
-      weakSelf.label.attributedString = weakSelf.getStringViewController.useAttribute ? [weakSelf string] : nil;
-      weakSelf.label.startOffset = weakSelf.getStringViewController.startOffset;
-    };
-  }
-  return _getStringViewController;
-}
-
 - (void)viewDidLoad {
   [super viewDidLoad];
   _label = [[MDCurveDemoLabel alloc] initWithFrame:CGRectMake(0, 0.f, 320, 600.f)];
   _label.curve = [MDCurvePicker curves][0];
-  _label.attributedString = [self string];
   _label.text = @"NSString with some very very very very very very very very very very very very very very very long word";
   _label.font = [UIFont boldSystemFontOfSize:16];
   _label.textColor = [UIColor redColor];
   _label.backgroundColor = [UIColor yellowColor];
   
-  UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 320, self.view.frame.size.height - 44.f)];
+  UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 320, self.view.frame.size.height - 88.f)];
   UIView *view = _label;
   [scrollView addSubview:view];
   scrollView.contentSize = view.frame.size;
   [self.view addSubview:scrollView];
   
-  self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"settings" style:UIBarButtonItemStyleDone target:self action:@selector(settings)];
+  self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"tapMe" style:UIBarButtonItemStyleDone target:self action:@selector(settings)];
+  
+  [self addSettingButtons];
+}
+
+- (void)addSettingButtons {
+  UISlider *slider = [[UISlider alloc] initWithFrame:CGRectMake(0, 0, 300.f, 33.f)];
+  slider.center = CGPointMake(160, self.view.frame.size.height - 66.f);
+  [slider addTarget:self action:@selector(startOffsetDidChange:) forControlEvents:UIControlEventValueChanged];
+  slider.maximumValue = 1.f;
+  slider.minimumValue = 0.f;
+  [self.view addSubview:slider];
+}
+
+- (void)startOffsetDidChange:(UISlider *)sender {
+  _label.startOffset = sender.value;
 }
 
 - (void)settings {
-  UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:self.getStringViewController];
-  [self.navigationController presentViewController:navigationController animated:YES completion:NULL];
+  _label.attributedString = _label.attributedString ? nil : [self string];
 }
 
 - (void)didPickCurve:(MDCurve *)curve {
