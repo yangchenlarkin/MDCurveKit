@@ -45,7 +45,7 @@
   uint64_t start = mach_absolute_time();
   
   for (int i = 0; i < pointCount; i++) {
-    CGPoint p = [self.curve pointWithUniformT:(i + 1.) / pointCount];
+    CGPoint p = [self.curve pointWithUniformParameter:(i + 1.) / pointCount];
     [self drawPointAtPoint:p];
   }
   uint64_t end = mach_absolute_time();

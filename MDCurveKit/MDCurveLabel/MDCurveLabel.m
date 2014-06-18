@@ -50,8 +50,8 @@
     
     NSString *word = [self.text substringWithRange:NSMakeRange(location, 1)];
     
-    CGPoint postion = [self.curve pointWithUniformT:offset];
-    CGPoint prime = [self.curve primePointWithUniformT:offset];
+    CGPoint postion = [self.curve pointWithUniformParameter:offset];
+    CGPoint prime = [self.curve primePointWithUniformParameter:offset];
     double angle = atan2(prime.y, prime.x);
     CGContextTranslateCTM(context, postion.x, postion.y);
     CGContextRotateCTM(context, angle);
@@ -96,8 +96,8 @@
     for (CFIndex glyphIndex = 0; glyphIndex < glyphCount && offset < 1.0; ++glyphIndex) {
       CGContextSaveGState(context);
       
-      CGPoint glyphPoint = [self.curve pointWithUniformT:offset];
-      CGPoint prime = [self.curve primePointWithUniformT:offset];
+      CGPoint glyphPoint = [self.curve pointWithUniformParameter:offset];
+      CGPoint prime = [self.curve primePointWithUniformParameter:offset];
       double angle = atan2(prime.y, prime.x);
       CGContextRotateCTM(context, angle);
       CGPoint translatedPoint = CGPointApplyAffineTransform(glyphPoint, CGAffineTransformMakeRotation(-angle));

@@ -14,15 +14,19 @@ typedef double(^MDcurveFunction)(double x);
 
 @interface MDCurve : NSObject
 
-/**
- *  给出线长函数反函数的时候，性能最高，其次是给线长函数，如果只给曲线函数，性能比较低。
- */
 @property (nonatomic, copy) MDCurvePointFunction curveFunction;
 @property (nonatomic, readonly) BOOL isBezierCurve;
 
 - (double)length;
-- (CGPoint)pointWithUniformT:(double)uniformT;
-- (CGPoint)primePointWithUniformT:(double)uniformT;
+- (CGPoint)pointWithUniformParameter:(double)v;
+/**
+ *  在v位置处的对t求倒数（dx/dt, dy/dt）
+ *
+ *  @param v uniformParameter
+ *
+ *  @return prime
+ */
+- (CGPoint)primePointWithUniformParameter:(double)v;
 - (void)drawInContext:(CGContextRef)context step:(int)step;
 - (void)drawInCurrentContextWithStep:(int)step;
 

@@ -25,13 +25,13 @@
   return NO;
 }
 
-- (CGPoint)pointWithUniformT:(double)uniformT {
-  double t = [self t_v:uniformT];
+- (CGPoint)pointWithUniformParameter:(double)v {
+  double t = [self t_v:v];
   return CGPointMake([self x:t], [self y:t]);
 }
 
-- (CGPoint)primePointWithUniformT:(double)uniformT {
-  double t = [self t_v:uniformT];
+- (CGPoint)primePointWithUniformParameter:(double)v {
+  double t = [self t_v:v];
   return CGPointMake([self dx_dt:t], [self dy_dt:t]);
 }
 
