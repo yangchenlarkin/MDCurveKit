@@ -29,9 +29,7 @@ attributedString的值目前只支持使用UIKit传入，即使用UIFont,UIColor
 
 @property (nonatomic, assign) double startOffset;
 
-用于传入文本开始绘制的位置在曲线上的坐标，取值范围为[0, 1],具体定义可以参见MDCurve:
-
-https://github.com/yangchenlarkin/MDCurve
+用于传入文本开始绘制的位置在曲线上的坐标，取值范围为[0, 1],具体定义可以参见[MDCurve](https://github.com/yangchenlarkin/MDCurveKit/blob/master/README/MDCurve.md)
 
 # 效果图
 ##使用NSAttributedString
