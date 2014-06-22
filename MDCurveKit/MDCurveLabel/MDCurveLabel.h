@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MDCurve.h"
+
+@class MDCurve;
 
 @interface MDCurveLabel : UIView
 

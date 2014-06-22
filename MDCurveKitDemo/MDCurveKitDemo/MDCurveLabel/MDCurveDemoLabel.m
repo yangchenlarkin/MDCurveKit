@@ -7,6 +7,7 @@
 //
 
 #import "MDCurveDemoLabel.h"
+#import "MDCurveKit.h"
 
 @implementation MDCurveDemoLabel
 

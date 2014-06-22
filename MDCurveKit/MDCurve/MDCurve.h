@@ -15,7 +15,6 @@ typedef double(^MDcurveFunction)(double x);
 @interface MDCurve : NSObject
 
 @property (nonatomic, copy) MDCurvePointFunction curveFunction;
-@property (nonatomic, readonly) BOOL isBezierCurve;
 
 - (double)length;
 - (CGPoint)pointWithUniformParameter:(double)v;
@@ -29,21 +28,5 @@ typedef double(^MDcurveFunction)(double x);
 - (CGPoint)primePointWithUniformParameter:(double)v;
 - (void)drawInContext:(CGContextRef)context step:(int)step;
 - (void)drawInCurrentContextWithStep:(int)step;
-
-@end
-
-
-@interface MDBezierCurve : MDCurve
-
-@property (nonatomic, assign) BOOL isCubic;
-@property (nonatomic, readonly) CGPathRef CGPath;
-
-- (id)initWithStartPointPair0:(MDPointPair *)pointPair0 pointPair1:(MDPointPair *)pointPair1;
-
-- (void)addPointPair:(MDPointPair *)pointPair;
-- (void)addPointPairs:(NSArray *)pointPairs;
-
-- (void)drawInContext:(CGContextRef)context;
-- (void)drawInCurrentContext;
 
 @end

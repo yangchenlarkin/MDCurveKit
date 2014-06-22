@@ -19,7 +19,8 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   _dataSource = @[@"MDCurveDemo",
-                @"MDCurveLabelDemo"];
+                  @"MDCurveLabelDemo",
+                  @"MDHandwritingViewDemo"];
 }
 
 #pragma mark - Table view data source

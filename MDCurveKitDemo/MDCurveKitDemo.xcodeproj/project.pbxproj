@@ -29,6 +29,24 @@
 		D07109F3194F2F4000120B57 /* MDCurvePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = D07109F2194F2F4000120B57 /* MDCurvePicker.m */; };
 		D07109F6194F40C300120B57 /* MDViewControllerWithPickerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D07109F5194F40C300120B57 /* MDViewControllerWithPickerButton.m */; };
 		D07109FC194F498E00120B57 /* MDCurveDemoLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D07109FB194F498E00120B57 /* MDCurveDemoLabel.m */; };
+		D0C7E25619570A190098BE1E /* MDHandwritingView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C7E25519570A190098BE1E /* MDHandwritingView.m */; };
+		D0C7E259195716860098BE1E /* MDHandWritingDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C7E258195716860098BE1E /* MDHandWritingDrawView.m */; };
+		D0C7E25D19571BAE0098BE1E /* MDHandwritingViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C7E25C19571BAE0098BE1E /* MDHandwritingViewDemoViewController.m */; };
+		D0C7E2AD195727950098BE1E /* colorPicker.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D0C7E29A195727950098BE1E /* colorPicker.bundle */; };
+		D0C7E2AE195727950098BE1E /* NEOColorPickerBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C7E29C195727950098BE1E /* NEOColorPickerBaseViewController.m */; };
+		D0C7E2AF195727950098BE1E /* NEOColorPickerFavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C7E29E195727950098BE1E /* NEOColorPickerFavoritesViewController.m */; };
+		D0C7E2B0195727950098BE1E /* NEOColorPickerFavoritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0C7E29F195727950098BE1E /* NEOColorPickerFavoritesViewController.xib */; };
+		D0C7E2B1195727950098BE1E /* NEOColorPickerGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C7E2A1195727950098BE1E /* NEOColorPickerGradientView.m */; };
+		D0C7E2B2195727950098BE1E /* NEOColorPickerHSLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C7E2A3195727950098BE1E /* NEOColorPickerHSLViewController.m */; };
+		D0C7E2B3195727950098BE1E /* NEOColorPickerHSLViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0C7E2A4195727950098BE1E /* NEOColorPickerHSLViewController.xib */; };
+		D0C7E2B4195727950098BE1E /* NEOColorPickerHueGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C7E2A6195727950098BE1E /* NEOColorPickerHueGridViewController.m */; };
+		D0C7E2B5195727950098BE1E /* NEOColorPickerHueGridViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0C7E2A7195727950098BE1E /* NEOColorPickerHueGridViewController.xib */; };
+		D0C7E2B6195727950098BE1E /* NEOColorPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C7E2A9195727950098BE1E /* NEOColorPickerViewController.m */; };
+		D0C7E2B7195727950098BE1E /* NEOColorPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0C7E2AA195727950098BE1E /* NEOColorPickerViewController.xib */; };
+		D0C7E2B8195727950098BE1E /* UIColor+NEOColor.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C7E2AC195727950098BE1E /* UIColor+NEOColor.m */; };
+		D0C7E2BC19572EB90098BE1E /* MDBezierCurve.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C7E2BB19572EB90098BE1E /* MDBezierCurve.m */; };
+		D0C7E2BF19572FF90098BE1E /* MDBrokenLineCurve.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C7E2BE19572FF90098BE1E /* MDBrokenLineCurve.m */; };
+		D0C7E2C21957304A0098BE1E /* MDPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C7E2C11957304A0098BE1E /* MDPoint.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +96,39 @@
 		D07109F5194F40C300120B57 /* MDViewControllerWithPickerButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDViewControllerWithPickerButton.m; sourceTree = "<group>"; };
 		D07109FA194F498E00120B57 /* MDCurveDemoLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDCurveDemoLabel.h; sourceTree = "<group>"; };
 		D07109FB194F498E00120B57 /* MDCurveDemoLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDCurveDemoLabel.m; sourceTree = "<group>"; };
+		D0C7E25419570A190098BE1E /* MDHandwritingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MDHandwritingView.h; path = MDHandwritingView/MDHandwritingView.h; sourceTree = "<group>"; };
+		D0C7E25519570A190098BE1E /* MDHandwritingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MDHandwritingView.m; path = MDHandwritingView/MDHandwritingView.m; sourceTree = "<group>"; };
+		D0C7E257195716860098BE1E /* MDHandWritingDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MDHandWritingDrawView.h; path = MDHandwritingView/MDHandWritingDrawView.h; sourceTree = "<group>"; };
+		D0C7E258195716860098BE1E /* MDHandWritingDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MDHandWritingDrawView.m; path = MDHandwritingView/MDHandWritingDrawView.m; sourceTree = "<group>"; };
+		D0C7E25B19571BAE0098BE1E /* MDHandwritingViewDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MDHandwritingViewDemoViewController.h; path = MDHandwritingView/MDHandwritingViewDemoViewController.h; sourceTree = "<group>"; };
+		D0C7E25C19571BAE0098BE1E /* MDHandwritingViewDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MDHandwritingViewDemoViewController.m; path = MDHandwritingView/MDHandwritingViewDemoViewController.m; sourceTree = "<group>"; };
+		D0C7E29A195727950098BE1E /* colorPicker.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = colorPicker.bundle; sourceTree = "<group>"; };
+		D0C7E29B195727950098BE1E /* NEOColorPickerBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEOColorPickerBaseViewController.h; sourceTree = "<group>"; };
+		D0C7E29C195727950098BE1E /* NEOColorPickerBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEOColorPickerBaseViewController.m; sourceTree = "<group>"; };
+		D0C7E29D195727950098BE1E /* NEOColorPickerFavoritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEOColorPickerFavoritesViewController.h; sourceTree = "<group>"; };
+		D0C7E29E195727950098BE1E /* NEOColorPickerFavoritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEOColorPickerFavoritesViewController.m; sourceTree = "<group>"; };
+		D0C7E29F195727950098BE1E /* NEOColorPickerFavoritesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NEOColorPickerFavoritesViewController.xib; sourceTree = "<group>"; };
+		D0C7E2A0195727950098BE1E /* NEOColorPickerGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEOColorPickerGradientView.h; sourceTree = "<group>"; };
+		D0C7E2A1195727950098BE1E /* NEOColorPickerGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEOColorPickerGradientView.m; sourceTree = "<group>"; };
+		D0C7E2A2195727950098BE1E /* NEOColorPickerHSLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEOColorPickerHSLViewController.h; sourceTree = "<group>"; };
+		D0C7E2A3195727950098BE1E /* NEOColorPickerHSLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEOColorPickerHSLViewController.m; sourceTree = "<group>"; };
+		D0C7E2A4195727950098BE1E /* NEOColorPickerHSLViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NEOColorPickerHSLViewController.xib; sourceTree = "<group>"; };
+		D0C7E2A5195727950098BE1E /* NEOColorPickerHueGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEOColorPickerHueGridViewController.h; sourceTree = "<group>"; };
+		D0C7E2A6195727950098BE1E /* NEOColorPickerHueGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEOColorPickerHueGridViewController.m; sourceTree = "<group>"; };
+		D0C7E2A7195727950098BE1E /* NEOColorPickerHueGridViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NEOColorPickerHueGridViewController.xib; sourceTree = "<group>"; };
+		D0C7E2A8195727950098BE1E /* NEOColorPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEOColorPickerViewController.h; sourceTree = "<group>"; };
+		D0C7E2A9195727950098BE1E /* NEOColorPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEOColorPickerViewController.m; sourceTree = "<group>"; };
+		D0C7E2AA195727950098BE1E /* NEOColorPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NEOColorPickerViewController.xib; sourceTree = "<group>"; };
+		D0C7E2AB195727950098BE1E /* UIColor+NEOColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+NEOColor.h"; sourceTree = "<group>"; };
+		D0C7E2AC195727950098BE1E /* UIColor+NEOColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+NEOColor.m"; sourceTree = "<group>"; };
+		D0C7E2B919572E430098BE1E /* MDCurveKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDCurveKit.h; sourceTree = "<group>"; };
+		D0C7E2BA19572EB90098BE1E /* MDBezierCurve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDBezierCurve.h; sourceTree = "<group>"; };
+		D0C7E2BB19572EB90098BE1E /* MDBezierCurve.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDBezierCurve.m; sourceTree = "<group>"; };
+		D0C7E2BD19572FF90098BE1E /* MDBrokenLineCurve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDBrokenLineCurve.h; sourceTree = "<group>"; };
+		D0C7E2BE19572FF90098BE1E /* MDBrokenLineCurve.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDBrokenLineCurve.m; sourceTree = "<group>"; };
+		D0C7E2C01957304A0098BE1E /* MDPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDPoint.h; sourceTree = "<group>"; };
+		D0C7E2C11957304A0098BE1E /* MDPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDPoint.m; sourceTree = "<group>"; };
+		D0C7E2C319573C370098BE1E /* MDCurves.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDCurves.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +189,8 @@
 		D07109A1194F291B00120B57 /* MDCurveKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D0C7E299195727950098BE1E /* colorPicker */,
+				D0C7E25A19571B640098BE1E /* MDHandwritingView */,
 				D07109DD194F2C6F00120B57 /* MDCurve */,
 				D07109E6194F2C6F00120B57 /* MDCurveLabel */,
 				D07109AA194F291B00120B57 /* AppDelegate.h */,
@@ -188,6 +241,8 @@
 			children = (
 				D07109CF194F2BF400120B57 /* MDCurve */,
 				D07109D4194F2BF400120B57 /* MDCurveLabel */,
+				D0C7E253195709F20098BE1E /* MDHandwritingView */,
+				D0C7E2B919572E430098BE1E /* MDCurveKit.h */,
 			);
 			name = MDCurveKit;
 			path = ../MDCurveKit;
@@ -198,8 +253,15 @@
 			children = (
 				D07109D0194F2BF400120B57 /* MDCurve.h */,
 				D07109D1194F2BF400120B57 /* MDCurve.m */,
+				D0C7E2BA19572EB90098BE1E /* MDBezierCurve.h */,
+				D0C7E2BB19572EB90098BE1E /* MDBezierCurve.m */,
+				D0C7E2BD19572FF90098BE1E /* MDBrokenLineCurve.h */,
+				D0C7E2BE19572FF90098BE1E /* MDBrokenLineCurve.m */,
 				D07109D2194F2BF400120B57 /* MDPointPair.h */,
 				D07109D3194F2BF400120B57 /* MDPointPair.m */,
+				D0C7E2C01957304A0098BE1E /* MDPoint.h */,
+				D0C7E2C11957304A0098BE1E /* MDPoint.m */,
+				D0C7E2C319573C370098BE1E /* MDCurves.h */,
 			);
 			path = MDCurve;
 			sourceTree = "<group>";
@@ -233,6 +295,52 @@
 				D07109FB194F498E00120B57 /* MDCurveDemoLabel.m */,
 			);
 			path = MDCurveLabel;
+			sourceTree = "<group>";
+		};
+		D0C7E253195709F20098BE1E /* MDHandwritingView */ = {
+			isa = PBXGroup;
+			children = (
+				D0C7E25419570A190098BE1E /* MDHandwritingView.h */,
+				D0C7E25519570A190098BE1E /* MDHandwritingView.m */,
+				D0C7E257195716860098BE1E /* MDHandWritingDrawView.h */,
+				D0C7E258195716860098BE1E /* MDHandWritingDrawView.m */,
+			);
+			name = MDHandwritingView;
+			sourceTree = "<group>";
+		};
+		D0C7E25A19571B640098BE1E /* MDHandwritingView */ = {
+			isa = PBXGroup;
+			children = (
+				D0C7E25B19571BAE0098BE1E /* MDHandwritingViewDemoViewController.h */,
+				D0C7E25C19571BAE0098BE1E /* MDHandwritingViewDemoViewController.m */,
+			);
+			name = MDHandwritingView;
+			sourceTree = "<group>";
+		};
+		D0C7E299195727950098BE1E /* colorPicker */ = {
+			isa = PBXGroup;
+			children = (
+				D0C7E29A195727950098BE1E /* colorPicker.bundle */,
+				D0C7E29B195727950098BE1E /* NEOColorPickerBaseViewController.h */,
+				D0C7E29C195727950098BE1E /* NEOColorPickerBaseViewController.m */,
+				D0C7E29D195727950098BE1E /* NEOColorPickerFavoritesViewController.h */,
+				D0C7E29E195727950098BE1E /* NEOColorPickerFavoritesViewController.m */,
+				D0C7E29F195727950098BE1E /* NEOColorPickerFavoritesViewController.xib */,
+				D0C7E2A0195727950098BE1E /* NEOColorPickerGradientView.h */,
+				D0C7E2A1195727950098BE1E /* NEOColorPickerGradientView.m */,
+				D0C7E2A2195727950098BE1E /* NEOColorPickerHSLViewController.h */,
+				D0C7E2A3195727950098BE1E /* NEOColorPickerHSLViewController.m */,
+				D0C7E2A4195727950098BE1E /* NEOColorPickerHSLViewController.xib */,
+				D0C7E2A5195727950098BE1E /* NEOColorPickerHueGridViewController.h */,
+				D0C7E2A6195727950098BE1E /* NEOColorPickerHueGridViewController.m */,
+				D0C7E2A7195727950098BE1E /* NEOColorPickerHueGridViewController.xib */,
+				D0C7E2A8195727950098BE1E /* NEOColorPickerViewController.h */,
+				D0C7E2A9195727950098BE1E /* NEOColorPickerViewController.m */,
+				D0C7E2AA195727950098BE1E /* NEOColorPickerViewController.xib */,
+				D0C7E2AB195727950098BE1E /* UIColor+NEOColor.h */,
+				D0C7E2AC195727950098BE1E /* UIColor+NEOColor.m */,
+			);
+			path = colorPicker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,8 +418,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0C7E2B3195727950098BE1E /* NEOColorPickerHSLViewController.xib in Resources */,
+				D0C7E2B7195727950098BE1E /* NEOColorPickerViewController.xib in Resources */,
+				D0C7E2AD195727950098BE1E /* colorPicker.bundle in Resources */,
+				D0C7E2B5195727950098BE1E /* NEOColorPickerHueGridViewController.xib in Resources */,
 				D07109A6194F291B00120B57 /* InfoPlist.strings in Resources */,
 				D07109AE194F291B00120B57 /* Images.xcassets in Resources */,
+				D0C7E2B0195727950098BE1E /* NEOColorPickerFavoritesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,16 +444,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				D07109E8194F2C6F00120B57 /* MDCurveDemoViewController.m in Sources */,
+				D0C7E259195716860098BE1E /* MDHandWritingDrawView.m in Sources */,
+				D0C7E2BC19572EB90098BE1E /* MDBezierCurve.m in Sources */,
+				D0C7E2B4195727950098BE1E /* NEOColorPickerHueGridViewController.m in Sources */,
 				D07109E9194F2C6F00120B57 /* MDCurveDemoView.m in Sources */,
+				D0C7E2AF195727950098BE1E /* NEOColorPickerFavoritesViewController.m in Sources */,
 				D07109CC194F294A00120B57 /* MDHomeViewController.m in Sources */,
 				D07109F3194F2F4000120B57 /* MDCurvePicker.m in Sources */,
 				D07109DA194F2BF400120B57 /* MDCurveLabel.m in Sources */,
+				D0C7E2B1195727950098BE1E /* NEOColorPickerGradientView.m in Sources */,
 				D07109AC194F291B00120B57 /* AppDelegate.m in Sources */,
+				D0C7E2B6195727950098BE1E /* NEOColorPickerViewController.m in Sources */,
 				D07109F6194F40C300120B57 /* MDViewControllerWithPickerButton.m in Sources */,
+				D0C7E2BF19572FF90098BE1E /* MDBrokenLineCurve.m in Sources */,
 				D07109F0194F2E1F00120B57 /* MDCurveLabelDemoViewController.m in Sources */,
 				D07109D8194F2BF400120B57 /* MDCurve.m in Sources */,
 				D07109D9194F2BF400120B57 /* MDPointPair.m in Sources */,
+				D0C7E25D19571BAE0098BE1E /* MDHandwritingViewDemoViewController.m in Sources */,
+				D0C7E25619570A190098BE1E /* MDHandwritingView.m in Sources */,
 				D07109FC194F498E00120B57 /* MDCurveDemoLabel.m in Sources */,
+				D0C7E2C21957304A0098BE1E /* MDPoint.m in Sources */,
+				D0C7E2AE195727950098BE1E /* NEOColorPickerBaseViewController.m in Sources */,
+				D0C7E2B2195727950098BE1E /* NEOColorPickerHSLViewController.m in Sources */,
+				D0C7E2B8195727950098BE1E /* UIColor+NEOColor.m in Sources */,
 				D07109A8194F291B00120B57 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

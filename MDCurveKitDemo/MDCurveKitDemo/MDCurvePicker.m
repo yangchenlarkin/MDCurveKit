@@ -7,7 +7,7 @@
 //
 
 #import "MDCurvePicker.h"
-#import "MDCurve.h"
+#import "MDCurveKit.h"
 
 @interface MDCurvePicker () <UIActionSheetDelegate> {
   MDCurvePickerBlock _block;

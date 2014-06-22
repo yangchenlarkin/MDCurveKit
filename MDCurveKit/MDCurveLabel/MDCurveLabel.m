@@ -7,6 +7,7 @@
 //
 
 #import "MDCurveLabel.h"
+#import "MDCurves.h"
 #import <CoreText/CoreText.h>
 
 @implementation MDCurveLabel
