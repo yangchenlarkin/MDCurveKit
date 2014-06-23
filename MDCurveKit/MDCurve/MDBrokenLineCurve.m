@@ -23,10 +23,19 @@
 
 @implementation MDBrokenLineCurve
 
-- (id)initWithStartPointPair:(MDPointPair *)pointPair {
+- (id)initWithPointPair:(MDPointPair *)pointPair {
   if (self = [super init]) {
     self.points = @[[MDPoint pointWithPoint:pointPair.startPoint],
                     [MDPoint pointWithPoint:pointPair.controlPoint]].mutableCopy;
+    [self updateMethod];
+  }
+  return self;
+}
+
+- (id)initWithStartPoint:(CGPoint)startPoint nextPoint:(CGPoint)nextPoint {
+  if (self = [super init]) {
+    self.points = @[[MDPoint pointWithPoint:startPoint],
+                    [MDPoint pointWithPoint:nextPoint]].mutableCopy;
     [self updateMethod];
   }
   return self;
@@ -37,7 +46,7 @@
   MDPoint *point = self.points[0];
   CGPathMoveToPoint(path, NULL, point.x, point.y);
   for (int i = 1; i < self.points.count; i++) {
-    MDPoint *point = self.points[0];
+    MDPoint *point = self.points[i];
     CGPathAddLineToPoint(path, NULL, point.x, point.y);
   }
   return path;

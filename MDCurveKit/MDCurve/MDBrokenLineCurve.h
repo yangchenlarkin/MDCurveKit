@@ -14,7 +14,8 @@
 
 - (CGPathRef)CGPath NS_RETURNS_INNER_POINTER;
 
-- (id)initWithStartPointPair:(MDPointPair *)pointPair;
+- (id)initWithPointPair:(MDPointPair *)pointPair;
+- (id)initWithStartPoint:(CGPoint)point nextPoint:(CGPoint)point;
 
 - (void)addPoint:(MDPoint *)point;
 - (void)addPoints:(NSArray *)points;

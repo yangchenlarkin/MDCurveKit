@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @protocol MDHandWritingDrawViewDelegate;
-@class MDBezierCurve;
+@class MDCurve;
 @class MDHandwritingView;
 
 @interface MDHandWritingDrawView : UIView
@@ -23,6 +23,6 @@
 
 @protocol MDHandWritingDrawViewDelegate <NSObject>
 
-- (void)handWritingDrawView:(MDHandWritingDrawView *)drawView didDrawStroke:(MDBezierCurve *)bezierCurve;
+- (void)handWritingDrawView:(MDHandWritingDrawView *)drawView didDrawStroke:(MDCurve *)bezierCurve;
 
 @end

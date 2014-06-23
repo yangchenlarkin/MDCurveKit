@@ -93,8 +93,8 @@
   }
 }
 
-- (void)handWritingDrawView:(MDHandWritingDrawView *)drawView didDrawStroke:(MDBezierCurve *)bezierCurve {
-  [self addStrokes:@[bezierCurve]];
+- (void)handWritingDrawView:(MDHandWritingDrawView *)drawView didDrawStroke:(MDCurve *)curve {
+  [self addStrokes:@[curve]];
 }
 
 - (void)drawRect:(CGRect)rect {

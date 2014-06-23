@@ -57,7 +57,7 @@
              @"歪8字",
              @"奇怪的8字",
              @"直线",
-             @"分段函数（长方形）",
+             @"折线（长方形）",
              @"贝塞尔曲线（2次）",
              @"贝塞尔曲线（3次）", nil]);
 }
@@ -194,27 +194,13 @@
 
 
 /**
- *  分段函数
+ *  折线
  */
-
 + (MDCurve *)curve9 {
-  MDCurve *curve = [[MDCurve alloc] init];
-  curve.curveFunction =  ^(double t) {
-    CGFloat x = 10;
-    CGFloat y = 100;
-    CGFloat width = 300;
-    CGFloat height = 400;
-    if (t <= 0.25) {
-      return CGPointMake(x, y + t * height / 0.25);
-    }
-    if (t <= 0.5) {
-      return CGPointMake(x + (t - .25) * width / 0.25, y + height);
-    }
-    if (t <= 0.75) {
-      return CGPointMake(x + width, y + height - (t - 0.5) * height / 0.25);
-    }
-    return CGPointMake(x + width - (t - 0.75) * width / 0.25, y);
-  };
+  MDBrokenLineCurve *curve = [[MDBrokenLineCurve alloc] initWithStartPoint:CGPointMake(10, 100) nextPoint:CGPointMake(310, 100)];
+  [curve addPoints:@[[MDPoint pointWithPoint:CGPointMake(310, 400)],
+                     [MDPoint pointWithPoint:CGPointMake(10, 400)],
+                     [MDPoint pointWithPoint:CGPointMake(10, 100)]]];
   return curve;
 }
 

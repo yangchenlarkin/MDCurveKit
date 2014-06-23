@@ -40,7 +40,7 @@
   
   self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"pickColor" style:UIBarButtonItemStyleDone target:self action:@selector(colorPicker)];
   
-  UISlider *slider = [[UISlider alloc] initWithFrame:CGRectMake(0, 320 + 64 + 44, 320, 44)];
+  UISlider *slider = [[UISlider alloc] initWithFrame:CGRectMake(20, 320 + 64 + 44, 280, 44)];
   slider.minimumValue = 1;
   slider.maximumValue = 10;
   [slider addTarget:self action:@selector(strokeWidthChanged:) forControlEvents:UIControlEventValueChanged];

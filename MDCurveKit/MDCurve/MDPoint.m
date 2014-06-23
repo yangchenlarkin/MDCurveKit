@@ -16,6 +16,10 @@
   return p;
 }
 
++ (CGFloat)distanceBetweenPoint:(CGPoint)point1 andPoint:(CGPoint)point2 {
+  return hypotf(point1.x - point2.x, point1.y - point2.y);
+}
+
 - (CGFloat)x {
   return self.point.x;
 }

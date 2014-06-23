@@ -8,11 +8,14 @@
 
 #import "MDHandWritingDrawView.h"
 #import "MDCurves.h"
+#import "MDPoint.h"
 
 @interface MDHandWritingDrawView () {
+  NSMutableArray *_pointPairs;
   CGPoint _lastPoint;
   MDPointPair *_lastPointPair;
-  MDBezierCurve *_drawingBezierCurve;
+  id _drawingCurve;
+  int _pointCount;
 }
 
 @end
@@ -22,6 +25,7 @@
 - (id)initWithFrame:(CGRect)frame {
   self = [super initWithFrame:frame];
   if (self) {
+    _pointPairs = [NSMutableArray array];
     UIPanGestureRecognizer *gesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
     [self addGestureRecognizer:gesture];
     self.backgroundColor = [UIColor clearColor];
@@ -32,17 +36,19 @@
 - (void)pan:(UIPanGestureRecognizer *)panGesture {
   CGPoint point = [panGesture locationInView:self];
   if (panGesture.state == UIGestureRecognizerStateBegan) {
-    _lastPoint = point;
+    [self addPoint:point];
   }
   if (panGesture.state == UIGestureRecognizerStateChanged) {
+    if ([MDPoint distanceBetweenPoint:point andPoint:_lastPoint] < MAX(self.strokeWidth, 10) / 2) {
+      NSLog(@"mark1");
+      return;
+    }
     [self addPoint:point];
   }
   if (panGesture.state == UIGestureRecognizerStateEnded) {
     [self addPoint:point];
-    if (_drawingBezierCurve) {
-      [self.delegate handWritingDrawView:self didDrawStroke:_drawingBezierCurve];
-    } else {
-      
+    if (_drawingCurve) {
+      [self.delegate handWritingDrawView:self didDrawStroke:_drawingCurve];
     }
     [self clear];
   }
@@ -55,7 +61,9 @@
 - (void)clear {
   _lastPoint = CGPointZero;
   _lastPointPair = nil;
-  _drawingBezierCurve = nil;
+  _drawingCurve = nil;
+  _pointPairs = [NSMutableArray array];
+  _pointCount = 0;
   [self setNeedsDisplay];
 }
 
@@ -65,16 +73,32 @@
 }
 
 - (void)addPoint:(CGPoint)point {
-  MDPointPair *currentPointPair = [self pointPairWithLastPoint:_lastPoint currentPoint:point];
-  if (_lastPointPair) {
-    if (!_drawingBezierCurve) {
-      _drawingBezierCurve = [[MDBezierCurve alloc] initWithStartPointPair0:_lastPointPair pointPair1:currentPointPair];
-    } else {
-      [_drawingBezierCurve addPointPair:currentPointPair];
-    }
+  _pointCount++;
+  if (_pointCount == 1) {
+    _lastPoint = point;
+    return;
   }
-  _lastPoint = point;
-  _lastPointPair = currentPointPair;
+  
+  CGPoint currentPoint = point;
+  MDPointPair *currentPointPair = _pointCount % 2 ?
+  [MDPointPair pointPairWithStartPoint:point controlPoint:CGPointZero] :
+  [MDPointPair pointPairWithStartPoint:_lastPoint controlPoint:point];
+  
+  if (_pointCount == 2) {
+    _drawingCurve = [[MDBrokenLineCurve alloc] initWithPointPair:currentPointPair];
+  } else if (_pointCount == 3) {
+    _drawingCurve = [[MDBezierCurve alloc] initWithStartPointPair0:_lastPointPair pointPair1:currentPointPair];
+  } else if (_pointCount == 4) {
+    _drawingCurve = [[MDBezierCurve alloc] initWithStartPointPair0:_lastPointPair pointPair1:currentPointPair];
+    ((MDBezierCurve *)_drawingCurve).isCubic = YES;
+  } else if (_pointCount % 2 == 0) {
+    [((MDBezierCurve *)_drawingCurve) addPointPair:currentPointPair];
+  }
+  
+  _lastPoint = currentPoint;
+  if (_pointCount % 2 == 0) {
+    _lastPointPair = currentPointPair;
+  }
   [self setNeedsDisplay];
 }
 
@@ -82,7 +106,7 @@
   CGContextRef context = UIGraphicsGetCurrentContext();
   CGContextSetLineCap(context, kCGLineCapRound);
   if (self.isDashed) {
-    CGFloat dashPattern[2] = {10, 10};
+    CGFloat dashPattern[2] = {10, 10 + self.strokeWidth};
     CGContextSetLineDash(context, 0, dashPattern, 2);
   }
   CGContextSetLineWidth(context, 2);
@@ -92,7 +116,7 @@
   if (self.strokeWidth) {
     CGContextSetLineWidth(context, self.strokeWidth);
   }
-  [_drawingBezierCurve drawInCurrentContext];
+  [_drawingCurve drawInCurrentContext];
 }
 
 @end

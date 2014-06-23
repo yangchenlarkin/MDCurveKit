@@ -13,5 +13,7 @@
 #import "MDBrokenLineCurve.h"
 #import "MDCurveLabel.h"
 #import "MDHandwritingView.h"
+#import "MDPointPair.h"
+#import "MDPoint.h"
 
 #endif

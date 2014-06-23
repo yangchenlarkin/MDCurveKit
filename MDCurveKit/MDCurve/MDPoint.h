@@ -16,4 +16,7 @@
 
 + (MDPoint *)pointWithPoint:(CGPoint)point;
 
++ (CGFloat)distanceBetweenPoint:(CGPoint)point1
+                       andPoint:(CGPoint)point2;
+
 @end
