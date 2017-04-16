@@ -18,29 +18,29 @@
 @implementation MDViewControllerWithPickerButton
 
 - (MDCurvePicker *)picker {
-  __weak MDViewControllerWithPickerButton *weakSelf = self;
-  return _picker ?: (_picker = [[MDCurvePicker alloc] initWithBlock:
-                                ^(MDCurve *curve) {
-                                  [weakSelf didPickCurve:curve];
-                                }]);
+    __weak MDViewControllerWithPickerButton *weakSelf = self;
+    return _picker ?: (_picker = [[MDCurvePicker alloc] initWithBlock:
+                                  ^(MDCurve *curve) {
+                                      [weakSelf didPickCurve:curve];
+                                  }]);
 }
 
 - (void)viewDidLoad {
-  [super viewDidLoad];
-  
-  UIButton *_button = [[UIButton alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height - 44.f, 320.f, 44.f)];
-  [_button setTitle:@"选择曲线" forState:UIControlStateNormal];
-  [_button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-  [_button addTarget:self action:@selector(pickCurve) forControlEvents:UIControlEventTouchUpInside];
-  [self.view addSubview:_button];
+    [super viewDidLoad];
+    
+    UIButton *_button = [[UIButton alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height - 44.f, self.view.frame.size.width, 44.f)];
+    [_button setTitle:@"选择曲线" forState:UIControlStateNormal];
+    [_button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [_button addTarget:self action:@selector(pickCurve) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:_button];
 }
 
 - (void)pickCurve {
-  [self.picker pickInViewController:self];
+    [self.picker pickInViewController:self];
 }
 
 - (void)didPickCurve:(MDCurve *)curve {
-  
+    
 }
 
 @end

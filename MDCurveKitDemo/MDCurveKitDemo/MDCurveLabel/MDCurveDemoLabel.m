@@ -15,8 +15,4 @@
   [super drawRect:rect];
 }
 
-- (void)drawPointAtPoint:(CGPoint)point {
-  CGContextFillEllipseInRect(UIGraphicsGetCurrentContext(), CGRectMake(point.x - 1, point.y - 1, 10, 10));
-}
-
 @end

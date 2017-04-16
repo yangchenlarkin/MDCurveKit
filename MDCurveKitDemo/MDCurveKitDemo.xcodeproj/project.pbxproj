@@ -29,6 +29,9 @@
 		D07109F3194F2F4000120B57 /* MDCurvePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = D07109F2194F2F4000120B57 /* MDCurvePicker.m */; };
 		D07109F6194F40C300120B57 /* MDViewControllerWithPickerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D07109F5194F40C300120B57 /* MDViewControllerWithPickerButton.m */; };
 		D07109FC194F498E00120B57 /* MDCurveDemoLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D07109FB194F498E00120B57 /* MDCurveDemoLabel.m */; };
+		D0E93A6A1EA2412600D6C198 /* MDCurveListView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E93A691EA2412600D6C198 /* MDCurveListView.m */; };
+		D0E93A6E1EA2598500D6C198 /* MDCurveListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E93A6D1EA2598500D6C198 /* MDCurveListViewCell.m */; };
+		D0E93A711EA3979F00D6C198 /* MDCurveListViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E93A701EA3979F00D6C198 /* MDCurveListViewDemoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +81,12 @@
 		D07109F5194F40C300120B57 /* MDViewControllerWithPickerButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDViewControllerWithPickerButton.m; sourceTree = "<group>"; };
 		D07109FA194F498E00120B57 /* MDCurveDemoLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDCurveDemoLabel.h; sourceTree = "<group>"; };
 		D07109FB194F498E00120B57 /* MDCurveDemoLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDCurveDemoLabel.m; sourceTree = "<group>"; };
+		D0E93A681EA2412600D6C198 /* MDCurveListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDCurveListView.h; sourceTree = "<group>"; };
+		D0E93A691EA2412600D6C198 /* MDCurveListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDCurveListView.m; sourceTree = "<group>"; };
+		D0E93A6C1EA2598500D6C198 /* MDCurveListViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDCurveListViewCell.h; sourceTree = "<group>"; };
+		D0E93A6D1EA2598500D6C198 /* MDCurveListViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDCurveListViewCell.m; sourceTree = "<group>"; };
+		D0E93A6F1EA3979F00D6C198 /* MDCurveListViewDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDCurveListViewDemoViewController.h; sourceTree = "<group>"; };
+		D0E93A701EA3979F00D6C198 /* MDCurveListViewDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDCurveListViewDemoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +147,7 @@
 		D07109A1194F291B00120B57 /* MDCurveKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D0E93A6B1EA2538600D6C198 /* MDCurveListView */,
 				D07109DD194F2C6F00120B57 /* MDCurve */,
 				D07109E6194F2C6F00120B57 /* MDCurveLabel */,
 				D07109AA194F291B00120B57 /* AppDelegate.h */,
@@ -186,6 +196,7 @@
 		D07109CE194F2BF400120B57 /* MDCurveKit */ = {
 			isa = PBXGroup;
 			children = (
+				D0E93A671EA240FE00D6C198 /* MDCurveListView */,
 				D07109CF194F2BF400120B57 /* MDCurve */,
 				D07109D4194F2BF400120B57 /* MDCurveLabel */,
 			);
@@ -235,6 +246,26 @@
 			path = MDCurveLabel;
 			sourceTree = "<group>";
 		};
+		D0E93A671EA240FE00D6C198 /* MDCurveListView */ = {
+			isa = PBXGroup;
+			children = (
+				D0E93A681EA2412600D6C198 /* MDCurveListView.h */,
+				D0E93A691EA2412600D6C198 /* MDCurveListView.m */,
+				D0E93A6C1EA2598500D6C198 /* MDCurveListViewCell.h */,
+				D0E93A6D1EA2598500D6C198 /* MDCurveListViewCell.m */,
+			);
+			path = MDCurveListView;
+			sourceTree = "<group>";
+		};
+		D0E93A6B1EA2538600D6C198 /* MDCurveListView */ = {
+			isa = PBXGroup;
+			children = (
+				D0E93A6F1EA3979F00D6C198 /* MDCurveListViewDemoViewController.h */,
+				D0E93A701EA3979F00D6C198 /* MDCurveListViewDemoViewController.m */,
+			);
+			path = MDCurveListView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -282,6 +313,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "剑川道长";
 				TargetAttributes = {
+					D0710997194F291B00120B57 = {
+						DevelopmentTeam = TMCNM9FYY2;
+					};
 					D07109B2194F291B00120B57 = {
 						TestTargetID = D0710997194F291B00120B57;
 					};
@@ -331,6 +365,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D07109E8194F2C6F00120B57 /* MDCurveDemoViewController.m in Sources */,
+				D0E93A711EA3979F00D6C198 /* MDCurveListViewDemoViewController.m in Sources */,
+				D0E93A6E1EA2598500D6C198 /* MDCurveListViewCell.m in Sources */,
 				D07109E9194F2C6F00120B57 /* MDCurveDemoView.m in Sources */,
 				D07109CC194F294A00120B57 /* MDHomeViewController.m in Sources */,
 				D07109F3194F2F4000120B57 /* MDCurvePicker.m in Sources */,
@@ -342,6 +378,7 @@
 				D07109D9194F2BF400120B57 /* MDPointPair.m in Sources */,
 				D07109FC194F498E00120B57 /* MDCurveDemoLabel.m in Sources */,
 				D07109A8194F291B00120B57 /* main.m in Sources */,
+				D0E93A6A1EA2412600D6C198 /* MDCurveListView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,10 +495,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = TMCNM9FYY2;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MDCurveKitDemo/MDCurveKitDemo-Prefix.pch";
 				INFOPLIST_FILE = "MDCurveKitDemo/MDCurveKitDemo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -472,10 +510,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = TMCNM9FYY2;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MDCurveKitDemo/MDCurveKitDemo-Prefix.pch";
 				INFOPLIST_FILE = "MDCurveKitDemo/MDCurveKitDemo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

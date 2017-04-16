@@ -44,7 +44,6 @@
   CGContextRef context = UIGraphicsGetCurrentContext();
   CGContextSetTextMatrix(context, CGAffineTransformIdentity);
   double offset = self.startOffset;
-  CGContextSetFillColorWithColor(context, self.textColor.CGColor);
   for (int location = 0; location < self.text.length; location++) {
     CGContextSaveGState(context);
     
@@ -55,11 +54,11 @@
     double angle = atan2(prime.y, prime.x);
     CGContextTranslateCTM(context, postion.x, postion.y);
     CGContextRotateCTM(context, angle);
-    CGContextTranslateCTM(context, 0, -[word sizeWithFont:self.font].height);
+      CGContextTranslateCTM(context, 0, -[word sizeWithAttributes:@{NSFontAttributeName:self.font}].height);
     
-    [word drawAtPoint:CGPointZero withFont:self.font];
+      [word drawAtPoint:CGPointZero withAttributes:@{NSFontAttributeName:self.font, NSForegroundColorAttributeName: self.textColor}];
     
-    offset += [word sizeWithFont:self.font].width / self.curve.length;
+      offset += [word sizeWithAttributes:@{NSFontAttributeName:self.font}].width / self.curve.length;
     CGContextRestoreGState(context);
     
     if (offset > 1) {

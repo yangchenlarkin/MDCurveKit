@@ -18,8 +18,10 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  _dataSource = @[@"MDCurveDemo",
-                @"MDCurveLabelDemo"];
+    _dataSource = @[@"MDCurve",
+                    @"MDCurveLabel",
+                    @"MDCurveListView",
+                  ];
 }
 
 #pragma mark - Table view data source
@@ -40,7 +42,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
   [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
-  Class theClass = NSClassFromString([_dataSource[indexPath.row] stringByAppendingString:@"ViewController"]);
+  Class theClass = NSClassFromString([_dataSource[indexPath.row] stringByAppendingString:@"DemoViewController"]);
   UIViewController *viewController = [[theClass alloc] init];
   [self.navigationController pushViewController:viewController animated:YES];
 }
